@@ -4,13 +4,13 @@ import './Chat.css'
 
 export default function Chat() {
 
-  const[question,setQuestion]=useState("");
+    const[question,setQuestion]=useState("");
     const[outputs,setoutputs]=useState("Terminal");
     const SendQuestion = async () => {
     console.log(question)
     let QuestionBlock = {
-        'question': 'hello',
-        'answer': 'Terminal',
+        'question':question,
+        'answer': 'result',
     };
         await axios({
             method: 'post',
