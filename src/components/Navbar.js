@@ -18,7 +18,7 @@ export default function Navbar() {
 
         await axios({
             method: 'post',
-            url: 'http://localhost:8000/uploadfile/',
+            url: 'http://0.0.0.0:8000/uploadfile/',
             data:formData,
             headers: {
                 'Content-Type': 'multipart/form-data'
