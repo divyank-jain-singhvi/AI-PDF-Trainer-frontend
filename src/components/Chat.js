@@ -52,7 +52,7 @@ export default function Chat() {
     };
         await axios({
             method: 'post',
-            url: 'http://localhost:8000/response/',
+            url: 'https://ai-pdf-trainer-backend.onrender.com/response/',
             data: QuestionBlock,
             headers: {
                 'Content-Type': 'application/json'
@@ -62,7 +62,7 @@ export default function Chat() {
         }).catch((error) => {
             console.error("Error:", error);
         });
-        const response=await axios.get('http://localhost:8000/')
+        const response=await axios.get('https://ai-pdf-trainer-backend.onrender.com/')
         console.log(response.data)
         setoutputs(response.data)
     };
