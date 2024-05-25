@@ -26,4 +26,12 @@
     background-color: white;
 
 }
+.one-chat-div{
+    max-width: 85%;
+    margin: auto;
+}
+.question{
+    margin-bottom: 3vh;
+    margin-top: 5vh;
+}
 
