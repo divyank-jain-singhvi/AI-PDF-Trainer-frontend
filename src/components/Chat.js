@@ -52,7 +52,7 @@ export default function Chat() {
     };
         await axios({
             method: 'post',
-            url: 'http://localhost:8000/',
+            url: 'http://0.0.0.0:8000/',
             data: QuestionBlock,
             headers: {
                 'Content-Type': 'application/json'
@@ -62,7 +62,7 @@ export default function Chat() {
         }).catch((error) => {
             console.error("Error:", error);
         });
-        const response=await axios.get('http://localhost:8000/')
+        const response=await axios.get('http://0.0.0.0:8000/')
         console.log(response.data)
         setoutputs(response.data)
     };
