@@ -18,7 +18,7 @@ export default function Navbar() {
 
         await axios({
             method: 'post',
-            url: 'http://0.0.0.0:8000/uploadfile/',
+            url: 'https://ai-pdf-trainer-backend.onrender.com/uploadfile/',
             data:formData,
             headers: {
                 'Content-Type': 'multipart/form-data'
