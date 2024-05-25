@@ -1,6 +1,9 @@
 import React,{useState} from 'react'
 import axios from 'axios';
 import './Chat.css'
+import ai from '../asserts/ai.png'
+import group from '../asserts/Group 4.png'
+
 
 function FormattedText({ text }) {
   // Check if text is defined before processing
@@ -67,8 +70,8 @@ export default function Chat() {
     <>
         <div className='chat-main'>
             <div className='one-chat-div'>
-                <div className='question'>{outputs[Object.keys(outputs).length-1].question}</div>
-                <div><FormattedText text={outputs[Object.keys(outputs).length-1].answer}/></div>
+                <div className='question'><img src={group} alt='' className='bot-image'></img>{outputs[Object.keys(outputs).length-1].question}</div>
+                <div className='result'><img src={ai} alt='' className='question-image'></img><FormattedText text={outputs[Object.keys(outputs).length-1].answer}/></div>
             </div>
             <div className='question-input-block'>
                 <input className='question-input shadow' placeholder='Send a message...' type="text" onChange={(e)=>setQuestion(e.target.value)} value={question} required></input>

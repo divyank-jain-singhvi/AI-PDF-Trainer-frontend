@@ -34,4 +34,16 @@
     margin-bottom: 3vh;
     margin-top: 5vh;
 }
-
+.result{
+    display: flex;
+}
+.question-image{
+    margin-right: 2vh;
+    width: 3vw;
+    height: 6vh;
+}
+.bot-image{
+    width: 3vw;
+    height: 6vh;
+    margin-right: 2vh;
+}
